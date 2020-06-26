@@ -11,7 +11,7 @@ public class RobotB
 	}
 	
 	
-	static void run()
+	public static void run()  //THis mehtod can access outside package because it contains public modifier
 	{
 		System.out.println("run executed");
 	}

@@ -9,12 +9,12 @@ public class RobotA
 		System.out.println("Robot is active");
 	}
 	
-	void walk()       //Instant method
+	public void walk()       //Instant method  [This method can access outside package,Because it has public modifier]
 	{
 		System.out.println("Walk executed");
 	}
 	
-    void run()		 //Instant method
+    void run()		 //Instant method          [This method can access only with in package,Because it don't have public modifier]
 	{
 		System.out.println("run executed");
 	}
