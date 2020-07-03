@@ -20,7 +20,7 @@ Html Source for editboxes:-->
 						
 	Clear:--> 
 			    Clear commands is only for editboxes.It's
-				clear existing text at editbox,Because webdriver
+				clear the existing text at editbox,Because webdriver
 				append chracters incase text already available.
 				
 	
