@@ -1,0 +1,188 @@
+How to identify dropdown at HtmlSource And Select Option from Dropdown :---->
+--------------------------------------------------------------------------------------------------------------------
+Html Source:-->
+
+		      <select id="Country" >
+					<option value="Ind"> India</option>
+					<option value="Usa"> America</option>
+					<option value="UK"> United kingdom</option>
+		       </select>
+		
+	Note:-->  Where Object contains Select tag only we Consider as dropdown
+					or combobox, In webdriver Dropdown to select separate 
+					commands available.These commands only we can use for
+					select tag elements.
+
+				    =>methods to select dropdown option
+			
+						1. SelectByvisibleText
+						2. SelectByValue
+						3. SelectByIndex
+						
+					=> Methods to deselect dropdown option
+						4. deselectAll
+						5. deselectbyVisibleText
+						6. deselectbyIndex
+						7. deselectbyValue
+						
+					=> Methods to verify dropdown status
+						8. isMultiple
+						
+					=> Method to retrieve dropdown option
+						9. getAllSelectedOptions
+						10.getFirstSelected option
+						11.getOptions
+			
+					//Instant selection method
+					new Select(WebElement).selectByvisibleText("Optionname);
+			
+					Select class package:--->
+					org.openqa.selenium.support.ui
+					
+=======================================================
+--------------------------------
+SelectByVisibleText:--->
+--------------------------------
+	In dropdown fields All options have visible names , 
+	use option name to select any dropdown at webpage
+
+Syntax:-->
+		new Select(webelement).selectbyvisibletext("Option Name");
+
+Html Source:-->
+
+			<select id="month">
+					<option value="1">Jan</option>
+					<option value="2">Feb</option>
+					<option value="3">Mar</option>
+			</select>
+			
+Example:---> Select Feb option  from above html source using Visible text
+
+		new Select(driver.findElement(By.id("month"))).Selectbyvisibletext("Feb");
+
+----------------------------
+Selectbyvalue:--->
+----------------------------
+	get dropdown option value from html source, For every
+	dropdown option  developer set one unique value
+	
+Syntax:--->
+		new Select(webelement).selectbyvalue("value in String");
+
+Html Source:-->
+
+		<select id="Country">
+				<option value="IND">India</option>
+				<option value="UK">United Kingdom</option>
+				<option value="USA">America</option>
+		</select>
+
+Example:---> Select option united kingdom from above source using selectbyvalue
+
+syntax:-->
+	new Select(driver.findElement(By.id(Country)).Selectbyvalue("UK");
+
+--------------------------------**********------------------------------------
+
+SelectByIndex:--->
+
+	* In Dropdown options index number always start with zero
+	* index of option-tag under select tag
+
+	Syntax:--->
+		new Select(webelement).selectbyindex(index in numeric);
+	
+htmlsource:--->
+		<select name="Country">
+					<option value="IND">India</option>
+					<option value="UK">United Kingdom</option>
+					<option value="USA">America</option>
+		</select>
+
+Example:---> Select UK option from dropdown using index
+
+Syntax:-->
+		new Select(driver.findElement(By.id("Country"))).SelectByindex(1);
+============================================================
+ismultiple:---->
+
+	* method usefull to find Dropdown selection state allow multiple
+	   or single option selection
+	* ismultiple is a boolean return type it return <<<true>>> on multiple 
+	 selection, and <<<false>>> on single option selection
+
+	Syntax:--->
+	boolean flag=new Select(webelement).ismultiple();
+	System.out.println(flag);
+=============================================================
+Example:--->Write a program to deselect, any single option from multiple Selection 
+			using visible text
+
+syntax:--->
+
+	new Select(Webelement).deselectbyvisibletext("OptionName");
+
+
+----------------------------------------------------------------------------
+
+Example:--> Write a program to deselect, any single option from multiple Selection 
+		 using <<Deselectbyindex>>
+
+Syntax:-->
+	new Select(webElement).deselectbyindex(indexnumber);
+
+----------------------------------------------------------------------
+
+Example:---> Write a program to deselect, any single option from multiple Selection 
+		 using <<Deselectbyvalue>>
+Syntax:-->
+
+new Select(webelement).deselectbyValue("optionvalue");
+
+-----------------------------------------------------------------------
+
+Example:---> How to Deselect all options from selection
+
+Syntax:--->
+                 new Select(webelement).deselectall();
+
+
+	Note:---> all deselect options will be performed on
+		multiple selection only.
+===========================================================
+getAllSelectedOptions:-->
+		Method retrieve Selection of option into List Interface.List
+		is a collection framework it store group of objects and allow to
+		enahance objects at runtime...
+		
+	  	Syntax:-->	
+	  			List<WebElement> list=new Select(WebElement).getAllSelectedOptions();
+		
+				=> Get Count of Selection objects
+						int Count=list.size();
+	
+				=> Get Any single object from group of objects
+						WebElemnet SingleOption=list.get(1);
+===============================================================================
+FirstSelectedOption:-->
+		Method return first selected option with in multiple selection dropdown.
+		
+		Syntax:-->
+				WebElement FirstOption=new Select(Webelement).getFirstselectedOptions();
+
+================================================================================
+getOptions:-->
+		Method collect all option element under dropdown into list interface.List
+		is a collection framework it store group of objects and allow to
+		enahance objects at runtime...
+		
+		Syntax:-->
+			List<WebElement> AllOptions=new Select(WebElement).getOptions();
+
+				=> Get Count of dropdown options
+						int Count=AllOptions.size();
+	
+				=> Get Any single object from group of objects
+						WebElemnet SingleOption=AllOptions.get(5);
+						SingleOption.Click();
