@@ -154,7 +154,7 @@ Syntax:--->
 getAllSelectedOptions:-->
 		Method retrieve Selection of option into List Interface.List
 		is a collection framework it store group of objects and allow to
-		enahance objects at runtime...
+		enhance objects at runtime...
 		
 	  	Syntax:-->	
 	  			List<WebElement> list=new Select(WebElement).getAllSelectedOptions();
