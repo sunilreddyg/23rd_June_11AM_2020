@@ -55,7 +55,7 @@ public class List_LinkedList {
 		
 		/*
 		 * Note:--> Because list store objects inorder, We can get any 
-		 * 			singel object using index number.
+		 * 			single object using index number.
 		 */
 		String index_obj=list.get(3);
 		System.out.println("Listinterface index object is => "+index_obj);
