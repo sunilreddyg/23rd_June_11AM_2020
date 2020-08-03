@@ -11,7 +11,7 @@ public class Working_With_Link {
 		
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();      		//Launch browser
-		driver.get("https://www.cleartrip.com/");       		//load page to browser
+		driver.get("https://www.cleartrip.com/");       //load page to browser
 		driver.manage().window().maximize();	  		//Maximize browser window
 		
 		

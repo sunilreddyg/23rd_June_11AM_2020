@@ -81,7 +81,6 @@
 					it self.
 
 
-
 					int vals[]={100,200,300,400,500};
 					System.out.println(vals[3]);
 
