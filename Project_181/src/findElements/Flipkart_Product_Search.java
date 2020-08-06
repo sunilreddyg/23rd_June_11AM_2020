@@ -18,15 +18,11 @@ public class Flipkart_Product_Search {
 		Thread.sleep(5000);
 		
 		
-		
-		
 		WebElement Next_btn=driver.findElement(By.xpath("//span[contains(.,'Next')]"));
 		
 		
 		int i=1;
 		do {
-			
-			
 			
 			//FInding product table
 			WebElement Products_Table=driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[3]/div[2]/div[1]/div[2]"));
@@ -42,12 +38,9 @@ public class Flipkart_Product_Search {
 				System.out.println(ProductName);
 				Thread.sleep(200);
 				
-				
-				
 			}
 			
-			
-			
+		
 			WebElement Footer_Links_Area=driver.findElement(By.xpath("//nav[@class='_1ypTlJ']"));
 			i=i+1;
 			//Data wrapping convert integer value to string
@@ -59,7 +52,7 @@ public class Flipkart_Product_Search {
 			
 			Footer_Links_Area=driver.findElement(By.xpath("//nav[@class='_1ypTlJ']"));
 			
-		} while (Next_btn.isDisplayed());   //On Next btn hidden loop will eject
+		} while (Next_btn.isDisplayed());   //On Next btn hidden loop will eject.
 		
 
 	}
