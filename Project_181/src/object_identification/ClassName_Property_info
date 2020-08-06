@@ -1,0 +1,66 @@
+Object Identification:--->
+
+	=> WebDriver identify objects at webpage using backend HTMLSource.
+	=> WebDriver use below locators to identify objects at webpage.
+
+			ID
+			Name
+			ClassName
+			Tagname
+			Linktext
+			PartialLinktext
+			Xpath
+			CssSelector
+
+
+			=> To Copty CssSelector  and Xpath we have plugin called [Chropath]
+			=> To Copy relative xpath we have plugin called  [Truepath]
+
+
+			Que:--> What if we don't have plugins.
+			Ans:--> I know how to identify object by analyse from HTMLSource.
+
+======================================================================================================>>
+
+Identification with classname:--->
+
+		1.<div  class="Sbtn"  type="submit"></div>
+		2.<div  class="Sbtn"  role="list"></div>
+
+		=> Here webdriver identify first object because class property is
+		   duplicated, When any property duplicated webdriver give priority to first object.
+
+		driver.findElement(By.className("Sbtn")).click();    
+
+
+		Que:--> How to check duplication of any property.
+		Ans:-->  
+			1. Open Webpage
+			2. Open HtmlSource
+			3. Copy propertyvalue to search
+			4. Press Cntrl+F
+			5. Type Property value and Press Enter
+			6. Then Selector display how many times the object is duplicated at HtmlSource.
+
+		Que:--> Identification with className propeprty when Class Property Have Spaces.
+
+			HtmlSource:-->
+				<input  class="TextBox Username" ></input>
+
+				driver.findElement(By.ClassName("TextBox Username"));
+				=> for the above identification webdriver throw Exception [WebDriver Exception]
+				   Because we can't define class property along with spaces.
+				=> In HtmlSource during class property space is indication for separate property.
+
+		
+				Solution:-->
+					Define before or after space any single class property.
+	
+					driver.FindElement(By.ClassName("TextBox"));
+							[OR]
+					driver.findElement(By.ClassName("Username"));
+
+			
+				Note:--> We can use Class property along with spaces, During
+					xpath or cssSelector identifications.
+=============================================================================================================>>
