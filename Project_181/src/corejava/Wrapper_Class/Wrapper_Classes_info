@@ -1,0 +1,48 @@
+Wrapper Classes:-->
+		
+		=> Wrapper Classes are usefull to covert primitive datatypes into objects.
+		=> 
+		
+		
+		
+==============Primitive datatypes and corresponding wrapper classes ============
+		
+		
+Primitive Datatypes				WrapperClass
+-------------------             ---------------
+char							Character
+byte							Byte
+short							Short
+int								Integer
+long							Long
+float							Float
+double							Double
+boolean 						Boolean
+
+==================================================================================
+
+Autoboxing:-->
+	Automatic conversions of primitive type to the object of theis correspondent classes.
+	
+	
+		int num=100;
+		=> Autoboxing primitive datatype to Object
+		Integer final_int=num;
+		
+		
+Unboxing:-->
+	This process is opposite to autoboxing, here we convert objects into primitive datatypes.
+	
+		Characters ch='a';
+		=> unboxing object into primitive datatypes
+		char x=ch;
+		
+	
+	
+			
+		
+		
+		
+		
+
+

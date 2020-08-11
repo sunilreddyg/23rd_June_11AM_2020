@@ -2,6 +2,7 @@ package findElements;
 
 import java.util.List;
 
+import org.apache.poi.ss.util.NumberToTextConverter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -46,6 +47,7 @@ public class Flipkart_Product_Search {
 			//Data wrapping convert integer value to string
 			Integer val=i;
 			String link=val.toString();
+			
 			
 			Footer_Links_Area.findElement(By.linkText(link)).click();
 			Thread.sleep(5000);
