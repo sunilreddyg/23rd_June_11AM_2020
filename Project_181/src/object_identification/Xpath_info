@@ -13,8 +13,7 @@ Xpath Attribute :-->
 
 	//tagname[@Attributename =  'Attribute value']
 				[OR]
-	//*[@Attributename =  'Attribute value']
-
+	//*[@Attributename = 'Attribute value']
 
 
 	// => Current Node
