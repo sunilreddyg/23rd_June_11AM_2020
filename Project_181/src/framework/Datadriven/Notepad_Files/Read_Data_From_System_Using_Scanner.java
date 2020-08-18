@@ -24,8 +24,6 @@ public class Read_Data_From_System_Using_Scanner {
 		boolean Status=sc.nextBoolean();
 		System.out.println("Status is => "+Status);
 		
-		
-		
 		System.out.println("Start Iteration => ");
 		int Start=sc.nextInt();
 		
@@ -37,11 +35,7 @@ public class Read_Data_From_System_Using_Scanner {
 			System.out.println(i);
 		}
 		
-		
-		
-		
-		
-		
+	
 		
 	}
 
