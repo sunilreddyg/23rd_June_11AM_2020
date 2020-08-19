@@ -1,4 +1,4 @@
-package corejava.variables;
+package corejava.Variables;
 
 public class DataTypes {
 

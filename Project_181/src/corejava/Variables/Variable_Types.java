@@ -1,4 +1,4 @@
-package corejava.variables;
+package corejava.Variables;
 
 public class Variable_Types 
 {
