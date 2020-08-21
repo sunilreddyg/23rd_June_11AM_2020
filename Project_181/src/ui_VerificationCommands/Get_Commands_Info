@@ -87,7 +87,50 @@ getText:-->
 						
 						* We can verify Status messages visible at webpage
 						* We can verify error messages visible at webpage
-						* We can verify expected text visible at webpage				
+						* We can verify expected text visible at webpage			
+						
+						
+						
+						
+	Scenario1:-->
+
+		=> GetText method return empty when text not visible at front page.
+		<input id="email"  class="login"></input>
+
+		String Rtext=driver.findElement(By.id("email")).getText();
+		System.out.Println(Rtext); ------------------------------------> Empty 
+
+
+	Scenario2:-->
+		
+		<div id="reg"  class="Status" > Transaction Completed </div>
+
+
+		String Text=driver.findElement(By.id("reg")).getText();
+		System.out.Println(Text); ----------------------------------------> Transaction Completed
+
+	Scenario3:-->
+
+		<select id="Country" class="reg">
+			<option > Jan </option>
+			<option > Feb </option>
+		</select>
+
+		
+		=> To capture all dropdown options
+		WebElement Dropdown=driver.findElement(By.id("country"));
+		String Options=Dropdown.getText();
+		System.out.Println(Text);   ------------>[Jan Feb]
+
+
+		=> Only single option to retrieve
+		String OptionName=driver.findElement(By.xpath("//select[@id='Country']/option[1]")).getText();
+		System.out.println(OptionName);  ------------------>[Jan]
+
+						
+						
+						
+								
 =======================================================================		
 getAttribute("propertyname");
 	
