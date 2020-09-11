@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[f1 method completed]]>
+    </line>
+    <line>
+      <![CDATA[f2 method completed]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75" started-at="2020-09-11T07:40:57Z" finished-at="2020-09-11T07:40:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="75" started-at="2020-09-11T07:40:57Z" finished-at="2020-09-11T07:40:57Z">
+      <class name="framework.testng.Method_Description">
+        <test-method status="PASS" signature="f1()[pri:0, instance:framework.testng.Method_Description@d2cc05a]" name="f1" duration-ms="25" started-at="2020-09-11T13:10:57Z" description="F1 method verifying login details" finished-at="2020-09-11T13:10:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[f1 method completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f1 -->
+        <test-method status="PASS" signature="f2()[pri:0, instance:framework.testng.Method_Description@d2cc05a]" name="f2" duration-ms="5" started-at="2020-09-11T13:10:57Z" description="F2 method verifying Registration details" finished-at="2020-09-11T13:10:57Z">
+          <reporter-output>
+            <line>
+              <![CDATA[f2 method completed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+      </class> <!-- framework.testng.Method_Description -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

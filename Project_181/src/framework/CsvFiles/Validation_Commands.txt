@@ -1,0 +1,95 @@
+
+
+
+Validation Commands:-->
+		1. IsDisplayed
+		2. IsEnabled
+		3. IsSelected
+
+
+
+	WebElement Element=driver.findElement(By.id("X"));
+
+
+	==> Verify Element is visible at webpage
+
+		if(Element.isDisplayed())
+		{
+			System.out.println("Element Visible");
+		}
+		else
+		{
+			System.out.println("Element Hidden");
+		}
+
+
+	==> Verify Element is hidden at webpage
+
+		if(!Element.isDisplayed())
+		{
+			System.out.println("Element Hidden");
+		}
+		else
+		{
+			System.out.println("Element visible");
+		}
+
+
+
+	==> Verify Element is Enabled and Ready for actions
+
+		
+		if(Element.isEnabled())
+		{
+			System.out.println("Element Enabled");
+		}
+		else
+		{
+			System.out.println("Element Disabled");
+		}
+
+
+	==> Verify Element is Disabled and Not ready to operate
+		
+		if(!Element.isEnabled())
+		{
+			System.out.println("Element Disabled");
+		}
+		else
+		{
+			System.out.println("Element Enabled");
+		}
+
+
+		Note:--> Is Selected method only work for checkboxes and 
+			Radio button
+
+		WebElement Checkbox_OR_RadioBtn=driver.findElement(By.id("X"));
+
+	==> Verify Checkbox/Radio button is Selected
+
+			if(Checkbox_OR_RadioBtn.isSelected())
+			{
+				System.out.println("Checkbox or radio button is Selected");
+
+			}
+			else
+			{
+				System.out.println("Checkbox or radio button is not Selected");
+			}
+
+
+	==> Verify Checkbox/Radio button is not Selected
+
+			if(!Checkbox_OR_RadioBtn.isSelected())
+			{
+				System.out.println("Checkbox or radio button is not Selected");
+
+			}
+			else
+			{
+				System.out.println("Checkbox or radio button is Selected");
+			}
+=============================================================================================================
+
+
