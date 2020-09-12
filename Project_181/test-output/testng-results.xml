@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[f1 method completed]]>
-    </line>
-    <line>
-      <![CDATA[f2 method completed]]>
+      <![CDATA[Expected title presented => Games]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="75" started-at="2020-09-11T07:40:57Z" finished-at="2020-09-11T07:40:57Z">
+  <suite name="Default suite" duration-ms="27092" started-at="2020-09-12T07:12:24Z" finished-at="2020-09-12T07:12:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="75" started-at="2020-09-11T07:40:57Z" finished-at="2020-09-11T07:40:57Z">
-      <class name="framework.testng.Method_Description">
-        <test-method status="PASS" signature="f1()[pri:0, instance:framework.testng.Method_Description@d2cc05a]" name="f1" duration-ms="25" started-at="2020-09-11T13:10:57Z" description="F1 method verifying login details" finished-at="2020-09-11T13:10:57Z">
+    <test name="Default test" duration-ms="27092" started-at="2020-09-12T07:12:24Z" finished-at="2020-09-12T07:12:51Z">
+      <class name="framework.testng.WebDriver_Testcase">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="beforeClass" is-config="true" duration-ms="11669" started-at="2020-09-12T12:42:24Z" finished-at="2020-09-12T12:42:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="3206" started-at="2020-09-12T12:42:35Z" finished-at="2020-09-12T12:42:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Verify_Games_link()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="Verify_Games_link" duration-ms="2935" started-at="2020-09-12T12:42:39Z" finished-at="2020-09-12T12:42:42Z">
           <reporter-output>
             <line>
-              <![CDATA[f1 method completed]]>
+              <![CDATA[Expected title presented => Games]]>
             </line>
           </reporter-output>
-        </test-method> <!-- f1 -->
-        <test-method status="PASS" signature="f2()[pri:0, instance:framework.testng.Method_Description@d2cc05a]" name="f2" duration-ms="5" started-at="2020-09-11T13:10:57Z" description="F2 method verifying Registration details" finished-at="2020-09-11T13:10:57Z">
+        </test-method> <!-- Verify_Games_link -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="afterMethod" is-config="true" duration-ms="282" started-at="2020-09-12T12:42:42Z" finished-at="2020-09-12T12:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[void framework.testng.WebDriver_Testcase.Verify_Games_link()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
-            <line>
-              <![CDATA[f2 method completed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- f2 -->
-      </class> <!-- framework.testng.Method_Description -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="afterClass" is-config="true" duration-ms="8947" started-at="2020-09-12T12:42:42Z" finished-at="2020-09-12T12:42:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- framework.testng.WebDriver_Testcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
