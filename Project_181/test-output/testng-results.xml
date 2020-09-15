@@ -1,46 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[Expected title presented => Games]]>
+      <![CDATA[Webpage load successfull]]>
+    </line>
+    <line>
+      <![CDATA[Email enter successfull]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27092" started-at="2020-09-12T07:12:24Z" finished-at="2020-09-12T07:12:51Z">
+  <suite name="default" duration-ms="12362" started-at="2020-09-15T06:56:34Z" finished-at="2020-09-15T06:56:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27092" started-at="2020-09-12T07:12:24Z" finished-at="2020-09-12T07:12:51Z">
-      <class name="framework.testng.WebDriver_Testcase">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="beforeClass" is-config="true" duration-ms="11669" started-at="2020-09-12T12:42:24Z" finished-at="2020-09-12T12:42:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="beforeMethod" is-config="true" duration-ms="3206" started-at="2020-09-12T12:42:35Z" finished-at="2020-09-12T12:42:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Verify_Games_link()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="Verify_Games_link" duration-ms="2935" started-at="2020-09-12T12:42:39Z" finished-at="2020-09-12T12:42:42Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Expected title presented => Games]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Verify_Games_link -->
-        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="afterMethod" is-config="true" duration-ms="282" started-at="2020-09-12T12:42:42Z" finished-at="2020-09-12T12:42:42Z">
+    <test name="test1" duration-ms="12362" started-at="2020-09-15T06:56:34Z" finished-at="2020-09-15T06:56:46Z">
+      <class name="framework.testng.With_Parameter.Get_Parameters_From_Suite">
+        <test-method status="PASS" signature="launch_browser(java.lang.String)[pri:0, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="launch_browser" duration-ms="8535" started-at="2020-09-15T12:26:34Z" finished-at="2020-09-15T12:26:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[void framework.testng.WebDriver_Testcase.Verify_Games_link()]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.testng.WebDriver_Testcase@29ee9faa]" name="afterClass" is-config="true" duration-ms="8947" started-at="2020-09-12T12:42:42Z" finished-at="2020-09-12T12:42:51Z">
+        </test-method> <!-- launch_browser -->
+        <test-method status="PASS" signature="loadWebpage(java.lang.String)[pri:1, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="loadWebpage" duration-ms="3500" started-at="2020-09-15T12:26:42Z" finished-at="2020-09-15T12:26:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://facebook.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
+            <line>
+              <![CDATA[Webpage load successfull]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- framework.testng.WebDriver_Testcase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loadWebpage -->
+        <test-method status="PASS" signature="User_login(java.lang.String, java.lang.String)[pri:2, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="User_login" duration-ms="264" started-at="2020-09-15T12:26:46Z" finished-at="2020-09-15T12:26:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vijay]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Email enter successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_login -->
+      </class> <!-- framework.testng.With_Parameter.Get_Parameters_From_Suite -->
+    </test> <!-- test1 -->
+  </suite> <!-- default -->
 </testng-results>

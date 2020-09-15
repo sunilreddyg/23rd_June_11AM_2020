@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="framework.testng.WebDriver_Testcase">
+      <class name="framework.testng.With_Parameter.ClassA">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="Verify_Games_link"/>
+          <include name="tc002"/>
         </methods>
-      </class> <!-- framework.testng.WebDriver_Testcase -->
+      </class> <!-- framework.testng.With_Parameter.ClassA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
