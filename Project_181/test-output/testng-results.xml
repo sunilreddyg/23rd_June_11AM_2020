@@ -1,63 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
-    <line>
-      <![CDATA[Webpage load successfull]]>
-    </line>
-    <line>
-      <![CDATA[Email enter successfull]]>
-    </line>
   </reporter-output>
-  <suite name="default" duration-ms="12362" started-at="2020-09-15T06:56:34Z" finished-at="2020-09-15T06:56:46Z">
+  <suite name="Default suite" duration-ms="124" started-at="2020-09-16T07:29:18Z" finished-at="2020-09-16T07:29:18Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="12362" started-at="2020-09-15T06:56:34Z" finished-at="2020-09-15T06:56:46Z">
-      <class name="framework.testng.With_Parameter.Get_Parameters_From_Suite">
-        <test-method status="PASS" signature="launch_browser(java.lang.String)[pri:0, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="launch_browser" duration-ms="8535" started-at="2020-09-15T12:26:34Z" finished-at="2020-09-15T12:26:42Z">
+    <test name="Default test" duration-ms="124" started-at="2020-09-16T07:29:18Z" finished-at="2020-09-16T07:29:18Z">
+      <class name="framework.testng.DP.Get_DP_Data_From_Different_Class">
+        <test-method status="PASS" signature="Test_login(java.lang.String, java.lang.String)[pri:0, instance:framework.testng.DP.Get_DP_Data_From_Different_Class@4f933fd1]" name="Test_login" duration-ms="16" started-at="2020-09-16T12:59:18Z" data-provider="user_login" finished-at="2020-09-16T12:59:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch_browser -->
-        <test-method status="PASS" signature="loadWebpage(java.lang.String)[pri:1, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="loadWebpage" duration-ms="3500" started-at="2020-09-15T12:26:42Z" finished-at="2020-09-15T12:26:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://facebook.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Webpage load successfull]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loadWebpage -->
-        <test-method status="PASS" signature="User_login(java.lang.String, java.lang.String)[pri:2, instance:framework.testng.With_Parameter.Get_Parameters_From_Suite@675d3402]" name="User_login" duration-ms="264" started-at="2020-09-15T12:26:46Z" finished-at="2020-09-15T12:26:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vijay]]>
+                <![CDATA[user1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[hello]]>
+                <![CDATA[pwd1]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Email enter successfull]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- User_login -->
-      </class> <!-- framework.testng.With_Parameter.Get_Parameters_From_Suite -->
-    </test> <!-- test1 -->
-  </suite> <!-- default -->
+        </test-method> <!-- Test_login -->
+        <test-method status="PASS" signature="Test_login(java.lang.String, java.lang.String)[pri:0, instance:framework.testng.DP.Get_DP_Data_From_Different_Class@4f933fd1]" name="Test_login" duration-ms="9" started-at="2020-09-16T12:59:18Z" data-provider="user_login" finished-at="2020-09-16T12:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_login -->
+        <test-method status="PASS" signature="Test_login(java.lang.String, java.lang.String)[pri:0, instance:framework.testng.DP.Get_DP_Data_From_Different_Class@4f933fd1]" name="Test_login" duration-ms="4" started-at="2020-09-16T12:59:18Z" data-provider="user_login" finished-at="2020-09-16T12:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_login -->
+        <test-method status="PASS" signature="Test_login(java.lang.String, java.lang.String)[pri:0, instance:framework.testng.DP.Get_DP_Data_From_Different_Class@4f933fd1]" name="Test_login" duration-ms="7" started-at="2020-09-16T12:59:18Z" data-provider="user_login" finished-at="2020-09-16T12:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_login -->
+        <test-method status="PASS" signature="Test_login(java.lang.String, java.lang.String)[pri:0, instance:framework.testng.DP.Get_DP_Data_From_Different_Class@4f933fd1]" name="Test_login" duration-ms="4" started-at="2020-09-16T12:59:18Z" data-provider="user_login" finished-at="2020-09-16T12:59:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_login -->
+      </class> <!-- framework.testng.DP.Get_DP_Data_From_Different_Class -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

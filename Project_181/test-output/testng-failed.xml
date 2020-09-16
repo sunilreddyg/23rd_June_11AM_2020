@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [default]">
-  <parameter name="browser_name" value="firefox"/>
-  <parameter name="uid" value="vijay"/>
-  <parameter name="appurl" value="http://facebook.com"/>
-  <parameter name="pwd" value="hello"/>
-  <parameter name="Fname" value="Newuser"/>
-  <test name="test1(failed)">
+<suite name="Failed suite [Default]" parallel="tests">
+  <parameter name="appurl" value="http://cleartrip.com"/>
+  <parameter name="browsername" value="ie"/>
+  <test name="Test_ie(failed)" parallel="tests">
+    <parameter name="browsername" value="ie"/>
     <classes>
-      <class name="framework.testng.With_Parameter.Get_Parameters_From_Suite">
+      <class name="framework.testng.CrossBrowser.CrossBrowser_Test">
         <methods>
-          <include name="User_registration" invocation-numbers="0"/>
+          <include name="flight_search"/>
         </methods>
-      </class> <!-- framework.testng.With_Parameter.Get_Parameters_From_Suite -->
+      </class> <!-- framework.testng.CrossBrowser.CrossBrowser_Test -->
     </classes>
-  </test> <!-- test1(failed) -->
-</suite> <!-- Failed suite [default] -->
+  </test> <!-- Test_ie(failed) -->
+</suite> <!-- Failed suite [Default] -->
